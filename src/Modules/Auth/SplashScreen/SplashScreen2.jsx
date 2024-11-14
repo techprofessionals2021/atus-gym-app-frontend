@@ -5,6 +5,8 @@ import RightArrow from '../../../assets/Images/right-arrow.png'
 import leftArrow from '../../../assets/Images/left-arrow.png'
 import EStyleSheet from 'react-native-extended-stylesheet';
 import styles from './SplashStyle';
+import colors from '../../../Constant/Color';
+
 
 // import logo from '../../../assets/Images/Logo-Screen.png'
 
@@ -26,22 +28,22 @@ export default function SplashScreen2({navigation}) {
           <View style={styles.buttonContainer2}>
                 <IconButton
                     icon={() => <Image source={leftArrow} />}
-                    iconColor='#fff'
+                    iconColor={colors.primary_white}
                     size={50}
                     style={styles.iconButton}                    
                     // iconColor={MD3Colors.error50}
                     mode='contained'
-                    containerColor='#000000'
+                    containerColor={colors.primary}
                     onPress={() => navigation.navigate('Splash')}
                 />
                 <IconButton
                     icon={() => <Image source={RightArrow} />}
-                    iconColor='#fff'
+                    iconColor={colors.primary_white}
                     size={50}
                     style={styles.iconButton}                    
                     // iconColor={MD3Colors.error50}
                     mode='contained'
-                    containerColor='#000000'
+                    containerColor={colors.primary}
                     onPress={() => navigation.navigate('Splash3')}
                 />
           </View>

@@ -5,7 +5,6 @@ import RightArrow from '../../../assets/Images/right-arrow-dark.png'
 import EStyleSheet from 'react-native-extended-stylesheet';
 import styles from './SplashStyle';
 
-// import logo from '../../../assets/Images/Logo-Screen.png'
 
 
 export default function SplashScreen({navigation}) {

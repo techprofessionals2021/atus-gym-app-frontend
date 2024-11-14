@@ -1,6 +1,8 @@
 import EStyleSheet from 'react-native-extended-stylesheet';
-
 import { Dimensions } from 'react-native';
+import colors from '../../../Constant/Color';
+import fontSize from '../../../Constant/font';
+
 
 const { width, height } = Dimensions.get('window');
 
@@ -23,41 +25,41 @@ export default EStyleSheet.create({
         alignItems: 'center',
       },
       heading: {
-        fontSize: 24,
-        fontWeight: 'bold',
-        fontFamily: 'Montserrat',
-        color: '#FFE8C8',
+        fontSize: fontSize.h3,
+        // fontWeight: 'bold',
+        fontFamily: 'Montserrat-Bold',
+        color: colors.accent,
         lineHeight: 24,
         marginBottom: 10,
         textAlign: 'center',
       },
       heading2: {
-        fontSize: 24,
-        fontWeight: 'bold',
-        fontFamily: 'Montserrat',
-        color: '#000',
+        // width : 360,
+        fontSize: fontSize.h3,
+        fontFamily: 'Montserrat-Bold',
+        color: colors.primary,
         lineHeight: 24,
         marginBottom: 10,
         textAlign: 'center',
+        paddingHorizontal : 10,
       },
       subText: {
         width : 360,
-        fontSize: 12,
-        fontWeight: 400,
+        fontSize: fontSize.text4,
         lineHeight: 16,
-        fontFamily: 'Montserrat',
-        color: '#FFE8C8',
+        fontFamily: 'Montserrat-Regular',
+        color: colors.accent,
         marginBottom: 10,
         textAlign: 'center',
       },
       subText2: {
         width : 360,
-        fontSize: 12,
-        fontWeight: 400,
+        fontSize: fontSize.text4,
         lineHeight: 16,
-        fontFamily: 'Montserrat',
-        color: '#000',
+        fontFamily: 'Montserrat-Regular',
+        color: colors.primary,
         marginBottom: 20,
+        paddingHorizontal : 10,
         textAlign: 'center',
       },
       buttonContainer: {
@@ -71,7 +73,7 @@ export default EStyleSheet.create({
         alignSelf: 'center',
       },
       button: {
-        width: '80%',
+        width: '90%',
         height: '56px',
         backgroundColor: '#111214', 
         borderRadius: 18, 
@@ -83,10 +85,10 @@ export default EStyleSheet.create({
 
       },
       buttonText: {
-        color: '#FFFFFF', 
+        color: colors.primary_white, 
+        fontFamily: 'Montserrat-Bold',
         textTransform: 'capitalize', 
-        fontSize : 18,
-        fontWeight : 700,
+        fontSize : fontSize.h5,
         padding : 10,
 
       },
