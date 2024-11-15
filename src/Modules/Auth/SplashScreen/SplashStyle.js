@@ -23,6 +23,7 @@ export default EStyleSheet.create({
         bottom: 0, // Adjust the distance from the bottom as needed
         width: '100%',
         alignItems: 'center',
+        paddingHorizontal : 10,
       },
       heading: {
         fontSize: fontSize.h3,
@@ -73,7 +74,7 @@ export default EStyleSheet.create({
         alignSelf: 'center',
       },
       button: {
-        width: '90%',
+        width: '100%',
         height: '56px',
         backgroundColor: '#111214', 
         borderRadius: 18, 

@@ -1,6 +1,7 @@
 import EStyleSheet from 'react-native-extended-stylesheet';
 import { Dimensions } from 'react-native';
 import colors from '../../Constant/Color';
+import fontSize from '../../Constant/font';
 
 
 
@@ -12,46 +13,73 @@ export default EStyleSheet.create({
         backgroundColor: '#FFFFFF',
       },
       headerImage: {
-        height: '35%',
+        height: '100%',
         justifyContent: 'center',
         alignItems: 'center',
       },
       headerContainer: {
-        alignItems: 'center',
+        height: 280,
+        // justifyContent: 'center',
+        // alignItems: 'center',
       },
       logo: {
         width: 80,
         height: 80,
-        marginBottom: 10,
+        marginBottom: 30,
       },
       headerText: {
-        fontSize: 20,
-        // fontWeight: 'bold',
-        fontFamily: 'Montserrat-Bold', // Use exact font name
+        fontSize: fontSize.h3,
+        fontFamily: 'Montserrat-Bold',
         color: '#111214',
         textAlign: 'center',
+        marginBottom: 5,
+
       },
       subText: {
-        fontSize: 14,
+        fontSize: fontSize.text1,
         color: '#666',
+        fontFamily: 'Montserrat-Regular',
         textAlign: 'center',
-        marginBottom: 20,
       },
       formContainer: {
         paddingHorizontal: 20,
         paddingTop: 20,
       },
+      backbtn :{
+        // flex : 1,
+        // flexDirection : 'row',
+        // textAlign : 'left',
+        // justifyContent: 'start',
+        // alignItems: 'center',
+        paddingHorizontal : 20,
+        width : '100%',
+        borderRadius : 18,
+        marginBottom : 20
+      },
+      Back:{
+        backgroundColor : colors.secondary_dark_grey,
+        borderRadius : 50,
+        height : 48,
+        width : 48,
+      },
       label: {
-        fontSize: 16,
-        color: '#111214',
+        fontSize: fontSize.text2,
+        color: colors.primary,
         marginBottom: 10,
-        fontWeight: 'bold',
+        fontFamily: 'Montserrat-Bold',
         textAlign: 'center',
+      },
+      label2: {
+        fontSize: fontSize.text2,
+        color: colors.primary,
+        marginBottom: 1,
+        paddingHorizontal: 10,
+        fontFamily: 'Montserrat-Bold',
       },
       roleContainer: {
         flexDirection: 'row',
         justifyContent: 'center',
-        marginBottom: 20,
+        marginBottom: 10,
       },
       roleButton: {
         paddingVertical: 10,
@@ -67,37 +95,41 @@ export default EStyleSheet.create({
       roleText: {
         color: '#fff',
       },
-      input: {
+      // input: {
+      //   // height: 56,
+      //   borderRadius: 19,
+      //   backgroundColor : colors.accentVariant,
+      //   padding: 16,
+      //   marginBottom: 20,
+      // },
+      inputContainer: {
+        flexDirection: 'row',
+        alignItems: 'center',
+        borderRadius: 19,
+        backgroundColor : colors.accentVariant,
+        padding: 16,
+        marginBottom: 20,
+        paddingHorizontal: 20,
+        marginBottom: 20,
         height: 50,
-        borderColor: '#ccc',
-        borderWidth: 1,
-        borderRadius: 8,
-        paddingHorizontal: 10,
-        marginBottom: 15,
+      },
+      input: {
+        flex: 1,
+        color : colors.primary,
       },
       pickerContainer: {
-        borderWidth: 1,
-        borderColor: '#ccc',
-        borderRadius: 8,
-        marginBottom: 15,
-        height: 50,
+        backgroundColor : colors.accentVariant,
+        borderRadius: 18,
+        marginBottom: 20,
+        // height: 50,
         justifyContent: 'center',
+        paddingHorizontal: 10,
+
       },
       picker: {
         width: '100%',
       },
-      signupButton: {
-        backgroundColor: '#000',
-        paddingVertical: 15,
-        borderRadius: 8,
-        alignItems: 'center',
-        marginTop: 10,
-      },
-      signupButtonText: {
-        color: '#fff',
-        fontSize: 16,
-        fontWeight: 'bold',
-      },
+
       footerLinks: {
         marginTop: 15,
         alignItems: 'center',
@@ -105,6 +137,27 @@ export default EStyleSheet.create({
       link: {
         color: '#007bff',
         textDecorationLine: 'underline',
+      },
+      switchContainer: {
+        flexDirection: 'row',
+        alignSelf: 'center',
+        borderRadius: 25,
+        borderWidth: 1,
+        borderColor: '#ccc',
+        overflow: 'hidden',
+      },
+      switchButton: {
+        paddingVertical: 10,
+        paddingHorizontal: 30,
+        backgroundColor: '#FFF',
+      },
+      activeButton: {
+        backgroundColor: '#000',
+      },
+      switchText: {
+        color: '#000',
+        fontSize: 16,
+        textAlign: 'center',
       },
 });
 
