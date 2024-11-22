@@ -29,7 +29,7 @@ export default function SplashScreen3({navigation}) {
             <Button
              icon={RightArrow}
               mode="text"
-              onPress={() => navigation.navigate('Signup')}
+              onPress={() => navigation.navigate('Signin')}
               contentStyle={{ flexDirection: 'row-reverse' }}
               labelStyle={styles.buttonText}
             >

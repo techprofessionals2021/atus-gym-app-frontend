@@ -90,7 +90,7 @@ export default EStyleSheet.create({
         fontFamily: 'Montserrat-Bold',
         textTransform: 'capitalize', 
         fontSize : fontSize.h5,
-        padding : 10,
+        padding : 8,
 
       },
       iconButton: {
